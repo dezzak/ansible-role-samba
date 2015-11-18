@@ -15,7 +15,7 @@ Role Variables
       global:
         workgroup: "workgroup"
         server_string: "%h server (Samba, debian)"
-        netbios_name: "hgdmzfs"
+        netbios_name: "samba"
         security: "user"
         #null_passwords: "yes"
         Map_to_guest: "Bad User"
