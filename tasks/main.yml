@@ -1,0 +1,6 @@
+---
+- include: install.yml
+- include: user.yml
+- include: directories.yml
+- include: configure.yml
+- include: system.yml

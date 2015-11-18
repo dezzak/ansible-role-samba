@@ -1,0 +1,9 @@
+---
+- name: create directories
+  file: >
+    path={{ item.path }} 
+    owner={{ item.force_user }} 
+    group={{ item.force_group }} 
+    mode={{ item.directory_mask }} 
+    state=directory
+  with_items: samba.shares

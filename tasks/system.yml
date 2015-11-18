@@ -1,0 +1,7 @@
+---
+
+- name: samba | set file limit
+  lineinfile: >
+      dest=/etc/security/limits.conf
+      line="* - nofile 16384"
+      insertbefore="^# End of file"

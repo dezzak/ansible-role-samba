@@ -1,0 +1,5 @@
+---
+- name: install samba-server
+  apt: >
+    name=samba 
+    state=present
