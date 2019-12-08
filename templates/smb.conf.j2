@@ -1,11 +1,11 @@
 [global]
-{% for key,value in samba.global.iteritems() %}
+{% for key,value in samba.global.items() %}
 {{key|replace("_" , " ")}} = {{value}}
 {% endfor %}
 
 {% for item in samba.shares %}
 [{{item.name}}]
-{% for key,value in item.iteritems() %}
+{% for key,value in item.items() %}
 {{key|replace("_", " ")}} = {{value}}
 {% endfor %}
 {% endfor %}
