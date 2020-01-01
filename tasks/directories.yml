@@ -7,3 +7,4 @@
     mode={{ item.directory_mask }} 
     state=directory
   with_items: "{{samba.shares}}"
+  when: item.force_user is defined
